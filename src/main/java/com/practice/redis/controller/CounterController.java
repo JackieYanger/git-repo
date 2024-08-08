@@ -19,7 +19,9 @@ public class  CounterController {
         Long increment = redisTemplate.opsForValue().increment("count-view");
 
         String str = redisTemplate.opsForValue().get("k1");
+        String str2 = redisTemplate.opsForValue().get("k2");
 
-        return String.format("有 [%d]人访问了页面, 同时取得键值为[%s]", increment,str);
+
+        return String.format("有 [%d]人访问了页面, 同时取得键值为[%s]、[%s]", increment,str, str2);
     }
 }
