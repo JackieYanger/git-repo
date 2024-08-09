@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class RedisStudyApplication {
 
     public static void main(String[] args) {
+        System.out.println("test pull");
         SpringApplication.run(RedisStudyApplication.class, args);
     }
 }
